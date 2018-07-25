@@ -6,6 +6,7 @@ import router from './router'
 
 import 'common/css/base.css'
 import 'common/css/index.css'
+import 'common/css/info.css'
 import 'common/css/m.css'
 
 Vue.config.productionTip = false
