@@ -3,7 +3,7 @@
     <Aside />
     <div class="r_box">
       <main>
-        <router-link :to="{path: '/detail/'+item.id}" tag="div" v-for="item in postList" :key="item.id">
+        <router-link :to="{path: '/detail/'+item.id}" tag="div" v-for="item in postList" :key="item.id" >
           <PostItem :post="item" />
         </router-link>
       </main>
