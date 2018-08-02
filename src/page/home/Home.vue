@@ -31,8 +31,10 @@ export default {
     getPostList() {
       axios
         .get("/blog/post/postlist", {
-          postSize: this.postList,
-          currentPage: this.currentPage
+          params: {
+            postSize: this.postSize,
+            currentPage: this.currentPage
+          }
         })
         .then(res => {
           this.postList = res.data.postList;
