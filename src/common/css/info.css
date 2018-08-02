@@ -1,6 +1,6 @@
 @charset "gb2312";
 .infosbox { float: right; width: 68%; overflow: hidden; background: rgba(255,255,255,0.8);}
-.newsview { padding: 0 30px }
+.newsview { padding: 0 30px 30px 30px; }
 .intitle { line-height: 40px; height: 40px; font-size: 14px; ; border-bottom: #000 2px solid; }
 .intitle a { font-weight: normal; }
 .news_title { font-size: 24px; font-weight: normal; padding: 20px 0; color: #333; }
@@ -14,10 +14,10 @@
 .tags { margin: 10px 0; }
 .infosbox img { max-width: 650px; height: auto; width:100% }
 .share { padding: 20px; }
-.nextinfo { line-height: 24px; width: 100%; overflow: hidden; margin: 20px 0 }/*ÉÏÒ»ÆªÏÂÒ»Æª*/
+.nextinfo { line-height: 24px; width: 100%; overflow: hidden; margin: 20px 0 }/*ï¿½ï¿½Ò»Æªï¿½ï¿½Ò»Æª*/
 .nextinfo p { padding: 4px 10px; border-radius: 5px; }
 .nextinfo a:hover { color: #000; text-decoration: underline }
-/*ÎÄÕÂÆÀÂÛ*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .news_pl { margin: 10px 0; width: 100%;  overflow: hidden;  }
 .news_pl h2 { border-bottom: #000 2px solid; line-height: 40px; font-size: 14px; padding-left: 10px; color: #000 }
 .diggit {  width: 160px; margin: auto; background: #E2523A; color: #fff; box-shadow: 1px 2px 6px 0px rgba(0,0,0,.2); border-radius: 3px; line-height: 40px; text-align: center; }

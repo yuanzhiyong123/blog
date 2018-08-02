@@ -15,7 +15,7 @@
           <div class="tags">
             <a href="/" target="_blank">{{postDetail.type}}</a> &nbsp; <a href="/" target="_blank">小世界</a>
           </div>
-          <div class="news_con" v-html="postDetail.content"></div>
+          <div class="news_con" v-html="postDetail.content" v-highlight></div>
         </div>
       </main>
     </div>
@@ -39,8 +39,8 @@ export default {
   methods: {
     getDetail() {
       const postid = this.$route.params.id;
-      axios.get('/mock/post-list.json?postid=' + postid).then(res => {
-        this.postDetail = res.data.postList[0];
+      axios.get('/blog/post/postdetail?id=' + postid).then(res => {
+        this.postDetail = res.data.data;
       });
     }
   },

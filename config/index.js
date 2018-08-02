@@ -11,8 +11,8 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/mock': {
-        target: 'http://www.zhiyong.club',
+      '/blog': {
+        target: 'http://localhost:777',
         changeOrigin: true,
         pathRewrite: {
           // '^/api': ''
