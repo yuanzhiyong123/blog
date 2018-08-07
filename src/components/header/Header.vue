@@ -8,7 +8,7 @@
           <router-link to="/">网站首页</router-link>
         </li>
         <li>
-          <router-link to="/detail">关于作者</router-link>
+          <router-link to="/detail" target="_blank">关于作者</router-link>
         </li>
       </ul>
   </nav>
