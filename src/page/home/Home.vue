@@ -52,7 +52,6 @@ export default {
         });
     },
     pageChange(info) {
-      console.log(info);
       this.currentPage = info.pageNumber;
       this.getPostList();
     }
@@ -66,6 +65,6 @@ export default {
 </script>
 <style>
 .pagenation li {
-  padding: 0;
+  padding: 0!important;
 }
 </style>
