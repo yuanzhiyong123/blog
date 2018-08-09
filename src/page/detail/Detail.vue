@@ -13,9 +13,11 @@
             </ul>
           </div>
           <div class="tags">
-            <a href="/" target="_blank">{{postDetail.type}}</a> &nbsp; <a href="/" target="_blank">小世界</a>
+            <a href="/" target="_blank">{{postDetail.type}}</a>
           </div>
-          <div class="news_con" v-html="postDetail.content" v-highlight></div>
+          <Loading v-show="isLoading" />
+          <div class="news_con" v-html="postDetail.content" v-highlight>
+          </div>
         </div>
       </main>
     </div>
@@ -26,11 +28,13 @@
 import axios from 'axios'
 import Aside from "components/aside/Aside";
 import PostItem from "components/post-item/Post-item";
+import Loading from 'components/loading/Loading'
 export default {
   name: "Detail",
   data() {
     return {
-      postDetail: {}
+      postDetail: {},
+      isLoading: true
     }
   },
   mounted() {
@@ -41,12 +45,14 @@ export default {
       const postid = this.$route.params.id;
       axios.get('/blog/post/postdetail?id=' + postid).then(res => {
         this.postDetail = res.data.data;
+        this.isLoading = false;
       });
     }
   },
   components: {
     Aside,
-    PostItem
+    PostItem,
+    Loading
   }
 };
 </script>

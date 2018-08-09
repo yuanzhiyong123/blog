@@ -4,7 +4,7 @@
       <div class="about_me">
         <h2>关于我</h2>
         <ul>
-          <i><img src="../1.jpg"></i>
+          <i><img src="./avatar.png"></i>
           <p><b>相思雨gg</b>，一个努力奋斗的90后前端小菜鸟。</p>
           <p><b>邮箱：</b>1060915552@qq.com</p>
         </ul>

@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import hljs from 'highlight.js'
+import pageination from 'v-page';
 
 import 'common/css/base.css'
 import 'common/css/index.css'
@@ -18,6 +19,9 @@ Vue.directive('highlight', function (el) {
     hljs.highlightBlock(block)
   })
 })
+
+// 分页插件
+Vue.use(pageination);
 
 Vue.config.productionTip = false
 
