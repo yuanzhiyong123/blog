@@ -5,11 +5,11 @@
 ## 技术栈
 
 ```
-前端： Vue + vue-router + axios+vuex (正在开发中...)
+前端： Vue + vue-router + axios+vuex
 
-后台管理系统： react + react-router + antd (还未开发)
+后台管理系统： react + react-router + antd 
 
-服务端： node+express+mongodb (还未开发)
+服务端： node+express+mongodb 
 ```
 
 ## Build Setup
