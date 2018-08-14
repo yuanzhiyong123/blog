@@ -12,7 +12,7 @@
       <div class="fenlei">
         <h2>文章分类</h2>
         <ul>
-          <li>前端技术</li>
+          <li>前端技术 </li>
           <li>生活趣事</li>
         </ul>
       </div>
