@@ -25,17 +25,17 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 import Aside from "components/aside/Aside";
 import PostItem from "components/post-item/Post-item";
-import Loading from 'components/loading/Loading'
+import Loading from "components/loading/Loading";
 export default {
   name: "Detail",
   data() {
     return {
       postDetail: {},
       isLoading: true
-    }
+    };
   },
   mounted() {
     this.getDetail();
@@ -43,7 +43,7 @@ export default {
   methods: {
     getDetail() {
       const postid = this.$route.params.id;
-      axios.get('/blog/post/postdetail?id=' + postid).then(res => {
+      axios.get("/blog/post/postdetail?id=" + postid).then(res => {
         this.postDetail = res.data.data;
         this.isLoading = false;
       });
@@ -56,3 +56,11 @@ export default {
   }
 };
 </script>
+<style>
+.news_con * {
+  margin-bottom: 16px;
+}
+.news_con p {
+  font-size: 14px;
+}
+</style>
