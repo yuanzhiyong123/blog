@@ -34,7 +34,7 @@ export default {
     };
   },
   mounted() {
-    
+  
   },
   methods: {
     getPostList() {
